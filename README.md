@@ -1,4 +1,4 @@
-# 📻 Morse Ops - Tactical Terminal
+# 📻 Morse Ops - Terminal
 
 O **Morse Ops** é um simulador interativo de telégrafo e um jogo de desafio de velocidade. O objetivo é transmitir palavras em código Morse o mais rápido possível para subir no ranking global de operadores.
 
