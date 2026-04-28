@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Ops - Tactical Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Terminal</h2>
+        
+        <div class="config-inicial">
+            <input type="text" id="nome-jogador" placeholder="NOME DO OPERADOR" maxlength="12">
+            <div class="controles-jogo">
+                <button class="btn btn-sorteio" id="btn-iniciar">INICIAR SEQUÊNCIA</button>
+                <button class="btn btn-limpar" id="btn-abortar">ABORTAR</button>
+            </div>
+        </div>
+
+        <div id="jogo-area" style="display:none">
+            <div class="alvo-box">
+                <div class="alvo" id="palavra-alvo">----</div>
+            </div>
+            
+            <div class="display" id="display-texto"></div>
+            <div id="morse-temp"></div>
+            
+            <div class="telegrafo-wrapper">
+                <button id="telegrafo-btn"></button>
+            </div>
+            
+            <div class="timer-display">
+                TIME: <span id="cronometro">0.0</span>S
+            </div>
+        </div>
+
+        <div class="rank-container">
+            <h3>SCOREBOARD</h3>
+            <table>
+                <tbody id="corpo-rank"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

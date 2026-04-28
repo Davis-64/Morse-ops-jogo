@@ -1,0 +1,113 @@
+:root {
+    --bg-dark: #0a0e14;
+    --surface: #1a1f26;
+    --accent-primary: #00d1ff;
+    --accent-secondary: #ffb800;
+    --success: #00ff94;
+    --danger: #ff4d4d;
+    --text-main: #e2e8f0;
+    --text-dim: #94a3b8;
+}
+
+body { 
+    font-family: 'Inter', sans-serif;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 40px 20px; 
+    background-color: var(--bg-dark); 
+    color: var(--text-main);
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container { 
+    background: var(--surface); 
+    padding: 40px; 
+    border-radius: 20px; 
+    border: 1px solid rgba(255,255,255,0.05); 
+    text-align: center; 
+    width: 100%; 
+    max-width: 480px; 
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+}
+
+h2 { 
+    font-size: 14px;
+    text-transform: uppercase; 
+    letter-spacing: 0.3em; 
+    color: var(--text-dim);
+    margin-bottom: 30px;
+}
+
+input#nome-jogador { 
+    padding: 14px; 
+    border-radius: 8px; 
+    border: 1px solid #2d3748; 
+    background: #0f141a; 
+    color: var(--accent-primary); 
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.alvo-box {
+    background: #0f141a;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent-primary);
+}
+
+.alvo { 
+    font-family: monospace;
+    font-size: 3rem; 
+    color: var(--accent-primary); 
+    font-weight: 700;
+}
+
+.display { 
+    font-family: monospace;
+    background: #0a0e14; 
+    padding: 20px; 
+    border-radius: 8px; 
+    color: var(--accent-secondary); 
+    font-size: 2.2rem; 
+    min-height: 60px; 
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 10px;
+}
+
+#morse-temp { 
+    color: var(--text-dim); 
+    font-size: 1.2rem; 
+    height: 25px; 
+    letter-spacing: 8px;
+}
+
+#telegrafo-btn {
+    width: 110px; height: 110px; border-radius: 50%; border: none;
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    box-shadow: 0 12px 0 #0a0e14, 0 20px 30px rgba(0,0,0,0.4);
+    cursor: pointer; outline: none; margin: 30px 0;
+}
+
+#telegrafo-btn:active, #telegrafo-btn.pressionado { 
+    transform: translateY(10px); 
+    box-shadow: 0 2px 0 #0a0e14; 
+    background: var(--accent-primary);
+}
+
+.timer-display { font-size: 11px; color: var(--text-dim); letter-spacing: 1px; }
+
+.rank-container { margin-top: 40px; text-align: left; }
+table { width: 100%; border-collapse: collapse; }
+td { padding: 12px 0; border-top: 1px solid #2d3748; font-size: 14px; }
+
+.controles-jogo { display: flex; gap: 12px; }
+.btn { flex: 1; border: none; padding: 14px; cursor: pointer; border-radius: 8px; font-weight: 600; font-size: 12px; }
+.btn-sorteio { background: var(--accent-primary); color: #000; }
+.btn-limpar { background: transparent; color: var(--danger); border: 1px solid var(--danger); }
